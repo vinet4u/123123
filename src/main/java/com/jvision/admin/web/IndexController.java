@@ -35,4 +35,11 @@ public class IndexController {
         model.addAttribute("posts", dto);
         return "posts-update";
     }
+    @GetMapping("/posts/deleteAll")
+    public  String DeleteAll(){
+        return "posts-deleteAll";
+
+    }
+
+
 }

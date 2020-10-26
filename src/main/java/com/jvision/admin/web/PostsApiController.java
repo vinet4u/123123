@@ -38,4 +38,10 @@ public class PostsApiController {
         return postsService.findById(id);
     }
 
+    @DeleteMapping("api/v1/posts/all")
+    public void  deleteAll(){
+        postsService.deleteAll();
+
+    }
+
 }
