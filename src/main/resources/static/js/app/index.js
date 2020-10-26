@@ -59,13 +59,10 @@ var main = {
         });
     },
     deleteAll : function () {
-                var id = $('#id').val();
 
                 $.ajax({
                     type: 'DELETE',
                     url: '/api/v1/posts/all',
-                    dataType: 'json',
-                    contentType:'application/json; charset=utf-8'
                 }).done(function() {
                     alert('삭제되었습니다.');
                     window.location.href = '/';
